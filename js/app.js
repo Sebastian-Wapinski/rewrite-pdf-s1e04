@@ -1,19 +1,19 @@
-const x = 5;
-const y = 6;
+const weather = 'deszcz';
+let place;
 
-console.log(x < y);
-console.log(!(x < y));
-console.log(x < y && x > y);
-console.log(x < y || x > y);
+if(weather === 'deszcz') {
+    place = 'home';
+}
 
-const x2 = 7;
-const y2 = 1;
-const min = 4;
-const max = 10;
+console.log(place);
 
-console.log(x2 >= min && x2 <= max);
-console.log(y2 >= min && y2 <= max);
-console.log(x2 < min || x2 > max);
-console.log(y2 < min || y2 > max);
+const winner = 'ja';
+let building;
 
-console.log(!(x2===y2));
+if(winner==='ja') {
+    building = 'home';
+} else {
+    building = 'flat';
+}
+
+console.log(building);
