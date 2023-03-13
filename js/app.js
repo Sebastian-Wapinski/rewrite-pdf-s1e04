@@ -1,30 +1,18 @@
-var num = 222;
-console.log(typeof num);
+const name = 'Sebastian';
+console.log(name.length);
 
-const str = 'jakiś ciąg znaków';
-console.log(typeof str);
+const nameUpper = name.toUpperCase();
+console.log(nameUpper);
 
-let arr = [];
-const arrType = typeof arr;
-console.log(arrType);
+const price = 5.9877;
+console.log(price);
 
-const fn = function() {
+const priceFixed = price.toFixed(2);
+console.log(priceFixed);
+console.log(typeof priceFixed);
 
-}
+const txt = '245.65';
+const numInt = parseInt(txt);
+const numFloat = parseFloat(txt);
 
-const fnType = typeof fn;
-console.log(fnType);
-
-let myVar = null;
-let myObj = {};
-
-console.log(typeof myVar, typeof myObj);
-
-console.log(myVar === null, myObj === null);
-
-console.log( typeof myVar === 'object',typeof myObj === 'object');
-
-if(typeof myVar === 'object') {
-    myVar.prop = 'value';
-}
-
+console.log(numInt, typeof numInt, numFloat, typeof numFloat);
