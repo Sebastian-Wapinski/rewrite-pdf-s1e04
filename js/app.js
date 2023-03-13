@@ -1,18 +1,36 @@
-const name = 'Sebastian';
-console.log(name.length);
+const res1 = 2 + 4; // 6
+const res2 = res1 / 2; // 3
+const res3 = res2 * res2; // 9
+const res4 = res3 / 2; // 4.5
+const res5 = res4 % 2; // 0.5
 
-const nameUpper = name.toUpperCase();
-console.log(nameUpper);
+let res6 = 1; res6++; // 2
+let res7 = 2; res7--; // 1
 
-const price = 5.9877;
-console.log(price);
+const res8 = 2 + '1'; // '21'
 
-const priceFixed = price.toFixed(2);
-console.log(priceFixed);
-console.log(typeof priceFixed);
+console.log(res1, res2, res3, res4, res5, res6, res7, res8);
 
-const txt = '245.65';
-const numInt = parseInt(txt);
-const numFloat = parseFloat(txt);
+const x = 1;
+const y = '2';
 
-console.log(numInt, typeof numInt, numFloat, typeof numFloat);
+const result1 = x + y;
+console.log(result1, typeof result1);
+
+const z = parseInt(y);
+const result2 = x + z;
+console.log(result2, typeof result2);
+
+const x2 = '1';
+const y2 = '2';
+
+const result3 = x2 * y2;
+console.log(result3, typeof result3);
+
+const z2 = 'abc';
+const result4 = x2 * z2;
+console.log(result4, typeof result4);
+
+console.log(result4 === NaN);
+console.log(result4 === result4);
+console.log(Number.isNaN(result4));
