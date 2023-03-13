@@ -1,11 +1,30 @@
-const rateFromUsdToPln = 3.80;
-const rateFromGbpToPln = 3.80;
-const valueUsd = 223;
-const valueGbp = 121;
-let pln;
+var num = 222;
+console.log(typeof num);
 
-pln = valueUsd * rateFromUsdToPln;
-console.log('Wartość dolarów to: ', pln);
+const str = 'jakiś ciąg znaków';
+console.log(typeof str);
 
-pln = valueGbp * rateFromGbpToPln;
-console.log('Wartość funtów to: ', pln);
+let arr = [];
+const arrType = typeof arr;
+console.log(arrType);
+
+const fn = function() {
+
+}
+
+const fnType = typeof fn;
+console.log(fnType);
+
+let myVar = null;
+let myObj = {};
+
+console.log(typeof myVar, typeof myObj);
+
+console.log(myVar === null, myObj === null);
+
+console.log( typeof myVar === 'object',typeof myObj === 'object');
+
+if(typeof myVar === 'object') {
+    myVar.prop = 'value';
+}
+
