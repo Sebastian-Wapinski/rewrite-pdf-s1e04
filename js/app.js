@@ -1,9 +1,11 @@
-const basket1 = 2785.12;
-const basket2 = 451.88;
-const basket3 = 4764;
+const rateFromUsdToPln = 3.80;
+const rateFromGbpToPln = 3.80;
+const valueUsd = 223;
+const valueGbp = 121;
+let pln;
 
-const sum = basket1 + basket2 + basket3;
+pln = valueUsd * rateFromUsdToPln;
+console.log('Wartość dolarów to: ', pln);
 
-const avg = sum / 3;
-
-console.log(avg);
+pln = valueGbp * rateFromGbpToPln;
+console.log('Wartość funtów to: ', pln);
