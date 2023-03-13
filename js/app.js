@@ -1,22 +1,19 @@
 const x = 5;
+const y = 6;
 
-console.log(x == "5");
+console.log(x < y);
+console.log(!(x < y));
+console.log(x < y && x > y);
+console.log(x < y || x > y);
 
-console.log(x === "5");
+const x2 = 7;
+const y2 = 1;
+const min = 4;
+const max = 10;
 
-console.log(x !== "5");
+console.log(x2 >= min && x2 <= max);
+console.log(y2 >= min && y2 <= max);
+console.log(x2 < min || x2 > max);
+console.log(y2 < min || y2 > max);
 
-console.log(x !== 5);
-
-console.log("0" == 0);
-
-console.log(0 == false);
-
-console.log(false == '0')
-
-console.log("0" === 0);
-
-console.log(0 === false);
-
-console.log(false === '0')
-
+console.log(!(x2===y2));
