@@ -1,12 +1,18 @@
-const a = 23;
-const b = 19;
-const c = 40;
+const a = 12;
+const b = 55;
 
-if (a > b && a > c) {
-    console.log('a jest największe');
-} else if (b > c) {
-    console.log('b jest największe');
-} else {
-    console.log('c jest największe');
-}
+const info = a > b ? 'A większe' : 'B większe';
+console.log(info);
+
+const diff = a > b ? a - b : b - a;
+console.log(diff);
+
+const isEven = a % 2 === 0 ? true : false;
+console.log(isEven);
+
+const numsAreEven1 = (a % 2 === 0) && (b % 2 === 0) ? true : false;
+
+const numsAreEven2 = !(a % 2) && !(b % 2) ? true : false;
+
+console.log(numsAreEven1, numsAreEven2);
 
