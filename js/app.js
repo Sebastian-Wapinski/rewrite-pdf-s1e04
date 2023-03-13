@@ -1,18 +1,27 @@
-const a = 12;
-const b = 55;
+const monthNumber = parseInt(prompt('Podaj numer miesiąca: ', 0));
 
-const info = a > b ? 'A większe' : 'B większe';
-console.log(info);
+let monthName;
 
-const diff = a > b ? a - b : b - a;
-console.log(diff);
+switch (monthNumber) {
+    case 1:
+        monthName = 'Styczeń';
+        break;
 
-const isEven = a % 2 === 0 ? true : false;
-console.log(isEven);
+    case 2:
+        monthName = 'Luty';
+        break;
 
-const numsAreEven1 = (a % 2 === 0) && (b % 2 === 0) ? true : false;
+    case 3:
+        monthName = 'Marzec';
+        break;
 
-const numsAreEven2 = !(a % 2) && !(b % 2) ? true : false;
+    case 4:
+        monthName = 'Kwiecień';
+        break;
 
-console.log(numsAreEven1, numsAreEven2);
+    default:
+        monthName = 'none';
+        break;
+}
 
+console.log(monthName);
