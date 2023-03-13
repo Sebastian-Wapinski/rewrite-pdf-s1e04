@@ -1,9 +1,11 @@
 const userAge = prompt('Ile masz lat?', 0);
 const userAgeInt = parseInt(userAge);
 
-if(userAgeInt >= 18) {
-    alert('Jesteś pełnoletni!')
-} else {
-    const leftAge = 18 - userAge;
+const isAdult = userAgeInt >= 18;
+
+if (!isAdult) {
+    const leftAge = 18 - userAgeInt;
+
     alert('Do pełnoletności brakuje Ci: ' + leftAge);
 }
+
