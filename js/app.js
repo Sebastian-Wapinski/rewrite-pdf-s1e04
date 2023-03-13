@@ -1,12 +1,9 @@
-console.log('JavaScript');
-console.log('jest');
-console.log('COOL');
+const basket1 = 2785.12;
+const basket2 = 451.88;
+const basket3 = 4764;
 
-const str = 'wartość typu string';
+const sum = basket1 + basket2 + basket3;
 
-const sum = 1 + 2; //komentarz
+const avg = sum / 3;
 
-console.log('wyświetlam', str);
-console.log('wyświetlam również liczbę', sum);
-
-alert('JS dizała!'); //komunikat
+console.log(avg);
