@@ -1,3 +1,12 @@
-for (let i = 3; i < 100; i+=3) {
-    console.log(i)
+const randomNumber = Math.round(Math.random() * 5);
+
+let userNumber;
+
+let counter = 0;
+
+while (userNumber !== randomNumber) {
+    userNumber = parseInt(prompt('Zgadnij liczbę 1-5!'));
+    counter+=1;
 }
+
+alert('Zgadłeś za: ' + counter + ' razem!');
