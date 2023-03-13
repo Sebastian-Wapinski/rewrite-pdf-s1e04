@@ -1,27 +1,3 @@
-const monthNumber = parseInt(prompt('Podaj numer miesiąca: ', 0));
-
-let monthName;
-
-switch (monthNumber) {
-    case 1:
-        monthName = 'Styczeń';
-        break;
-
-    case 2:
-        monthName = 'Luty';
-        break;
-
-    case 3:
-        monthName = 'Marzec';
-        break;
-
-    case 4:
-        monthName = 'Kwiecień';
-        break;
-
-    default:
-        monthName = 'none';
-        break;
+for (let i = 3; i < 100; i+=3) {
+    console.log(i)
 }
-
-console.log(monthName);
