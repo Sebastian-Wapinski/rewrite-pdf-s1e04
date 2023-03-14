@@ -1,15 +1,13 @@
-function showInfo() {
-    console.log('Funkcja');
-    console.log('są');
-    console.log('fajne!');
-}
-
-showInfo();
-
-function sumNumbers() {
-    const a = 2;
-    const b = 4;
+function sum(a, b) {
     console.log(a + b);
 }
 
-sumNumbers();
+sum(4, 5);
+sum(11, 44);
+
+function showInfo(text) {
+    console.log(text);
+}
+
+showInfo('Jakaś widomość!!!');
+
