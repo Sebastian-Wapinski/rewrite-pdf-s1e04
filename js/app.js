@@ -1,17 +1,10 @@
-function isEven(num) {
-    if(num % 2 === 0) {
-        return true;
-    }
+function getUserInput(messageForUser) {
+    const userInput = prompt(messageForUser);
 
-    return false;
+    return userInput;
 }
 
-function showEvenNumbers(start, stop) {
-    for (let i = start; i < stop; i++) {
-        if (isEven(i)) {
-            console.log(i + ' jest parzysta!');
-        }
-    }
-}
+const fn = getUserInput;
 
-showEvenNumbers(1,10)
+const inputFromUser = fn('Ile masz lat?');
+console.log(inputFromUser);
