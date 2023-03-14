@@ -1,12 +1,15 @@
-const randomNumber = Math.round(Math.random() * 5);
-
-let userNumber;
-
-let counter = 0;
-
-while (userNumber !== randomNumber) {
-    userNumber = parseInt(prompt('Zgadnij liczbę 0-5!'));
-    counter+=1;
+function showInfo() {
+    console.log('Funkcja');
+    console.log('są');
+    console.log('fajne!');
 }
 
-alert('Zgadłeś za: ' + counter + ' razem!');
+showInfo();
+
+function sumNumbers() {
+    const a = 2;
+    const b = 4;
+    console.log(a + b);
+}
+
+sumNumbers();
