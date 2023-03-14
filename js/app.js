@@ -1,13 +1,12 @@
 function sum(a, b) {
-    console.log(a + b);
+    const result = a + b;
+
+    return result;
 }
 
-sum(4, 5);
-sum(11, 44);
+const res1 = sum(4, 5);
+const res2 = sum(11, 44);
 
-function showInfo(text) {
-    console.log(text);
-}
+console.log(res1, res2);
 
-showInfo('Jakaś widomość!!!');
 
