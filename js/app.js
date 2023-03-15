@@ -1,12 +1,14 @@
-const sumNumbersFromUser = function(userInputFn) {
-    const a = userInputFn('Podaj liczbę a');
-    const b = userInputFn('Podaj liczbę b');
-
-    const sum = parseFloat(a) + parseFloat(b);
-    return sum;
+function showMessage() {
+    console.log('setTimeout');
 }
 
-const result = sumNumbersFromUser(function(message) {
-    return prompt(message);
-});
-console.log(result);
+const showName = function() {
+    console.log('Michael!');
+}
+
+setTimeout(showMessage, 1000);
+setTimeout(showName, 2000);
+
+setTimeout(function() {
+    console.log('funkcja anonimowa!');
+}, 5000)
