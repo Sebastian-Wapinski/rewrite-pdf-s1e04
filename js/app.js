@@ -1,10 +1,11 @@
-let counter = 1;
+const arr = [];
 
-const showCounter = function() {
-    console.log(counter);
-    counter++;
-}
+const names = ['Jan', 'Anna', 'Kasia'];
 
-console.log('before setInterval()');
-setInterval(showCounter, 1000);
-console.log('after setInterval()');
+console.log(names[0]);
+
+console.log(names.length);
+
+const lastIndex = names.length - 1;
+
+console.log(names[lastIndex]);
