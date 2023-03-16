@@ -1,8 +1,13 @@
-const arr = new Array(0);
+const numbers = [];
 
-const names = new Array('Jan', 'Anna', 'Kasia');
+const names = new Array();
 
-console.log(names[0]);
+console.log(numbers, names);
 
-console.log(names.length);
+numbers.push(1, 2, 3);
 
+names.push('Jan');
+
+console.log(numbers, names);
+
+console.log(numbers.length, names.length);
