@@ -1,13 +1,14 @@
-const numbers = [];
+const names = ['Jan', 'Anna', 'Kasia'];
 
-const names = new Array();
+if (names.indexOf('Jan') > -1) {
+    console.log('Istnieje w tablicy!');
+} else {
+    console.log('Brak w tablicy!');
+}
 
-console.log(numbers, names);
+if (names.includes('Kasia')) {
+    console.log('Istnieje w tablicy!');
+} else {
+    console.log('Brak w tablicy!');
+}
 
-numbers.push(1, 2, 3);
-
-names.push('Jan');
-
-console.log(numbers, names);
-
-console.log(numbers.length, names.length);
