@@ -1,16 +1,12 @@
-const numbers = [1.12, 2.13, 3.12, 4.61, 5.32];
-const integers = numbers.map(parseNumbersToInt);
-console.log(integers);
+const cart = [
+    ['skarpetki', 3, 4.90],
+    ['dlugopis', 4, 3.90],
+    ['zeszyt', 2, 5.90]
+];
 
-function parseNumbersToInt(element, index, array) {
-    return parseInt(element);
-}
+const costPerProduct = cart.map(function(product) {
+    return (product[1] * product[2]).toFixed(2);
+});
 
-
-const evenNumbers = integers.map(isEven);
-console.log(evenNumbers);
-
-function isEven(element) {
-    return element % 2 === 0;
-}
+console.log(costPerProduct);
 
