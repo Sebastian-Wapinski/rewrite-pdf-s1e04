@@ -1,4 +1,4 @@
-const numbers = [];
+const numbers = [5, 10, 20, 8, 1];
 
 while (numbers.length < 5) {
     
@@ -12,4 +12,12 @@ while (numbers.length < 5) {
 }
 
 console.log(numbers);
+
+numbers.sort(function(a, b) {
+     return a - b;
+});
+
+console.log(numbers);
+
+
 
