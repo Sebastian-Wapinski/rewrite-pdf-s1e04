@@ -1,12 +1,13 @@
-const cart = [
-    ['skarpetki', 3, 4.90],
-    ['dlugopis', 4, 3.90],
-    ['zeszyt', 2, 5.90]
-];
+const car = {
+    color: 'red',
+    mileage: 1203,
+    horsepower: 540,
+    seatsNumber: 2,
+}
 
-const newCart = cart.filter(function(product) {
-    return product[0] !== 'dlugopis';
-});
+car.color = 'blue';
+console.log(car.color, car['color']);
 
-console.log(newCart);
+const hp = car.horsepower;
+console.log(hp);
 
