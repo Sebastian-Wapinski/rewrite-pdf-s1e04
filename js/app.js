@@ -1,13 +1,14 @@
 const numbers = [1, 2, 3, 4, 5];
 
-numbers.forEach(function(element, index, array) {
-    console.log(element);
-});
+const sum = getSum(numbers);
+console.log(sum);
 
-function showEachElement(item, index) {
-    console.log(item + " => " + index);
+function getSum(arr) {
+    let sum = 0;
+    arr.forEach(function(num) {
+        sum += num;
+    });
+    return sum;
 }
-
-numbers.forEach(showEachElement);
 
 
