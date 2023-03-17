@@ -1,23 +1,15 @@
-const numbers = [5, 10, 20, 8, 1];
+const numbers = [1, 2, 3, 4, 5];
 
-while (numbers.length < 5) {
-    
-    const num = Math.round(Math.random() * 10);
-
-    if (numbers.includes(num)) {
-        
-    } else {
-        numbers.push(num);
-    }
+for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);    
 }
 
-console.log(numbers);
+let sum = 0;
 
-numbers.sort(function(a, b) {
-     return a - b;
-});
+for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+}
 
-console.log(numbers);
-
+console.log(sum);
 
 
