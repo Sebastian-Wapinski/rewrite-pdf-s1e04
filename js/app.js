@@ -1,14 +1,16 @@
-const numbers = [1, 2, 3, 4, 5];
+const numbers = [1.12, 2.13, 3.12, 4.61, 5.32];
+const integers = numbers.map(parseNumbersToInt);
+console.log(integers);
 
-const sum = getSum(numbers);
-console.log(sum);
-
-function getSum(arr) {
-    let sum = 0;
-    arr.forEach(function(num) {
-        sum += num;
-    });
-    return sum;
+function parseNumbersToInt(element, index, array) {
+    return parseInt(element);
 }
 
+
+const evenNumbers = integers.map(isEven);
+console.log(evenNumbers);
+
+function isEven(element) {
+    return element % 2 === 0;
+}
 
