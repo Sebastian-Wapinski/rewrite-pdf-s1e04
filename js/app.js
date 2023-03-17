@@ -1,14 +1,15 @@
-const names = ['Jan', 'Anna', 'Kasia'];
+const numbers = [];
 
-if (names.indexOf('Jan') > -1) {
-    console.log('Istnieje w tablicy!');
-} else {
-    console.log('Brak w tablicy!');
+while (numbers.length < 5) {
+    
+    const num = Math.round(Math.random() * 10);
+
+    if (numbers.includes(num)) {
+        
+    } else {
+        numbers.push(num);
+    }
 }
 
-if (names.includes('Kasia')) {
-    console.log('Istnieje w tablicy!');
-} else {
-    console.log('Brak w tablicy!');
-}
+console.log(numbers);
 
