@@ -1,15 +1,15 @@
 const numbers = [1, 2, 3, 4, 5];
 
-for (let i = 0; i < numbers.length; i++) {
-    console.log(numbers[i]);    
-}
-
-let sum = 0;
-
-for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
-}
+const sum = getSum(numbers);
 
 console.log(sum);
+
+function getSum(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
 
 
