@@ -1,17 +1,13 @@
-function showInfo() {
-    console.log(this.text);
+const user = {
+    firstName: 'Alicja',
+    lastName: 'Nowak',
+    age: 24,
 }
 
-const notice = {
-    text: 'Notice!',
-    showText: showInfo,
-}
+console.log(
+    user.firstName,
+    user['firstName']
+);
 
-const error = {
-    text: 'Error!',
-    showText: showInfo,
-}
-
-notice.showText();
-error.showText();
-
+const propName = 'firstName';
+console.log(user[propName]);
