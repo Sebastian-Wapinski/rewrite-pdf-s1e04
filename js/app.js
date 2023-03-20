@@ -4,9 +4,14 @@ const product = {
     price: 49,
 }
 
-product.info = 'text';
 product.price = 99;
 
-delete product.price;
+Object.defineProperty(
+    product,
+    'info',
+    {
+        value: 'JS jest super!'
+    }
+)
 
 console.log(product);
