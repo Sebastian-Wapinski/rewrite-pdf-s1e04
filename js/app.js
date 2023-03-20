@@ -11,8 +11,20 @@ const product = {
 
 product.price = 99;
 
-for(const key in product) {
-    console.log(key, product[key]);
+const obj = ['a', 'b', 'c'];
+
+for (const el of obj) {
+    console.log(el);
 }
 
-console.log(product);
+for (const key in obj) {
+    console.log(key);
+}
+
+
+
+// for(const key in product) {
+//     console.log(key, product[key]);
+// }
+
+// console.log(product);
