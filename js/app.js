@@ -1,17 +1,18 @@
 const product = {
     name: 'Podstawy JS',
     type: 'book',
-    price: 49,
+    set price(value) {
+        this._price = value;
+    },
+    get price() {
+        return this._price /100;
+    },
 }
 
 product.price = 99;
 
-Object.defineProperty(
-    product,
-    'info',
-    {
-        value: 'JS jest super!'
-    }
-)
+for(const key in product) {
+    console.log(key, product[key]);
+}
 
 console.log(product);
