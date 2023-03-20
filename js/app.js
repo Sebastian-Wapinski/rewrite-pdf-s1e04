@@ -1,20 +1,12 @@
-setInterval( function() {
-    const now = new Date();
-    const time = getTime(now);
-
-    document.title = time;
-    console.clear();
-    console.log(time);
-}, 1000);
-
-function getTime(date) {
-    let time = startWithZero(date.getHours());
-    time += ':' + startWithZero(date.getMinutes());
-    time += ':' + startWithZero(date.getSeconds());
-
-    return time;
+const product = {
+    name: 'Podstawy JS',
+    type: 'book',
+    price: 49,
 }
 
-function startWithZero(num) {
-    return (num < 10 ? '0' : '') + num;
-}
+product.info = 'text';
+product.price = 99;
+
+delete product.price;
+
+console.log(product);
