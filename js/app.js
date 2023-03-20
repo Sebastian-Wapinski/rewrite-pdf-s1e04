@@ -1,13 +1,17 @@
-const user = {
-    firstName: 'Alicja',
-    lastName: 'Nowak',
-    age: 24,
+const travelPrice = {
+    flight: 591,
+    hotel: 1400,
+    excursion: 421,
+    other: 120,
 }
+const totalPrice = getTotalPrice(travelPrice);
+console.log(totalPrice);
 
-for (const key in user) {
-    console.log(key);
-}
+function getTotalPrice(priceObject) {
+    const values = Object.values(priceObject);
+    const totalPrice = values.reduce(function(acc, price) {
+        return acc + price;
+    }, 0)
 
-for (const key in user) {
-    console.log(key + ': ' + user[key]);
+    return totalPrice;
 }
