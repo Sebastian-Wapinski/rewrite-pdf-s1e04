@@ -6,12 +6,11 @@ const product = {
     }
 }
 
-const strObj = new String('Marta');
-const numObj = new Number(2);
+const keys = Object.keys(product);
+const values = Object.values(product);
 
-console.log(strObj, numObj);
-console.log(strObj.constructor.name, numObj.constructor.name);
+console.log(keys, values);
 
-//Przy użyciu takiego konstruktora jestem w stanie pobrać informacje 
-//o typie danego obiektu
+//Szybkie przypisanie właściwości i wartości do tablic 
+//na których potem możemy pracować
 
