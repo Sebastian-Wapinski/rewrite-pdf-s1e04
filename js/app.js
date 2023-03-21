@@ -1,30 +1,25 @@
 const product = {
     name: 'Podstawy JS',
     type: 'book',
-    set price(value) {
-        this._price = value;
-    },
-    get price() {
-        return this._price /100;
-    },
+    price: {
+        value: 49,
+    }
 }
 
-product.price = 99;
+const nameObj = new String('Marta');
+console.log(nameObj);
+console.log(nameObj.valueOf());
+const namePr = 'Marta';
+console.log(namePr);
 
-const obj = ['a', 'b', 'c'];
-
-for (const el of obj) {
-    console.log(el);
+if (nameObj == namePr) {
+    console.log(true);
+} else {
+    console.log(false);
 }
+// Porównanie ścisłe === wypluwa false bo są porównywane różne typy obiektów 
+// Porównanie luźne == wypluwa true bo dochodzi do konwersji i tak naprawdę porównuje
+// nameObj.valueOf();
 
-for (const key in obj) {
-    console.log(key);
-}
+// Dlatego warto używać porównania ścisłego bo mamy pewność że nic nam się pod spodem nie dzieje
 
-
-
-// for(const key in product) {
-//     console.log(key, product[key]);
-// }
-
-// console.log(product);
