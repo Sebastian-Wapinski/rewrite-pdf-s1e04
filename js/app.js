@@ -2,10 +2,18 @@ const product = {
     name: 'Podstawy JS',
     type: 'book',
     price: [49, 39],
-}
+};
 
-product.price.forEach(function(price) {
-    console.log(price);
+const cart = [
+    {...product, price: 99},
+    {...product, price: 79},
+    {...product},
+];
+
+console.log(cart);
+
+cart.forEach(function(p){
+    console.log(p.price);
 })
 
 
