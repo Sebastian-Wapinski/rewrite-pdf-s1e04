@@ -1,14 +1,17 @@
-function Student(initFirstName, initLastName) {
-    this.firstName = initFirstName;
-    this.lastName = initLastName;
-}
+// function Student(initFirstName, initLastName) {
+//     this.firstName = initFirstName;
+//     this.lastName = initLastName;
+// }
 
-Student.prototype.showFullName = function() {
-    console.log(this.firstName, this.lastName);
-}
+// Student.prototype.showFullName = function() {
+//     console.log(this.firstName, this.lastName);
+// }
 
-const student1 = new Student('xx', 'yy');
-student1.showFullName();
+// const student1 = new Student('xx', 'yy');
+// student1.showFullName();
 
-const student2 = new Student('yy', 'ii');
-student2.showFullName();
+// const student2 = new Student('yy', 'ii');
+// student2.showFullName();
+
+const arr = Array.prototype;
+console.log(arr);
