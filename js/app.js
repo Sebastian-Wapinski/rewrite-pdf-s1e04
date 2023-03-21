@@ -1,7 +1,7 @@
 const product = {
     name: 'Podstawy JS',
     type: 'book',
-    price: [49, 39],
+    price: 49,
 };
 
 const cart = [
@@ -12,8 +12,9 @@ const cart = [
 
 console.log(cart);
 
-cart.forEach(function(p){
-    console.log(p.price);
-})
+let initialValue = 0;
+const sum = cart.reduce(function(acc, el) {
+    return acc + el.price;
+}, initialValue);
 
-
+console.log(sum);
