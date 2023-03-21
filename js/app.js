@@ -6,20 +6,12 @@ const product = {
     }
 }
 
-const nameObj = new String('Marta');
-console.log(nameObj);
-console.log(nameObj.valueOf());
-const namePr = 'Marta';
-console.log(namePr);
+const strObj = new String('Marta');
+const numObj = new Number(2);
 
-if (nameObj == namePr) {
-    console.log(true);
-} else {
-    console.log(false);
-}
-// Porównanie ścisłe === wypluwa false bo są porównywane różne typy obiektów 
-// Porównanie luźne == wypluwa true bo dochodzi do konwersji i tak naprawdę porównuje
-// nameObj.valueOf();
+console.log(strObj, numObj);
+console.log(strObj.constructor.name, numObj.constructor.name);
 
-// Dlatego warto używać porównania ścisłego bo mamy pewność że nic nam się pod spodem nie dzieje
+//Przy użyciu takiego konstruktora jestem w stanie pobrać informacje 
+//o typie danego obiektu
 
