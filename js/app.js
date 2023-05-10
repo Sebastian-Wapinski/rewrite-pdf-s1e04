@@ -15,3 +15,4 @@
 
 const arr = Array.prototype;
 console.log(arr);
+
